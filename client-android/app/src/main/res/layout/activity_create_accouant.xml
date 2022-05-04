@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount"
+  >
+    <include layout="@layout/toolbarcreate"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/createId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="@string/Create"
+        android:textColor="@color/red"
+        android:textSize="50sp"
+        android:textStyle="bold"
+
+
+        >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/textId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/createId"
+        android:layout_alignBottom="@id/createId"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="@string/id"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/createId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/createPassword"
+        android:layout_alignEnd="@+id/createPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="1dp"
+        android:layout_toEndOf="@id/textId"
+        android:background="@drawable/designinput"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:hint="@string/enter_your_id"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/createPassword"
+        android:layout_alignBottom="@+id/createPassword"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="@string/MP"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/createPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createId"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/textPassword"
+        android:background="@drawable/designinput"
+        android:drawableRight="@drawable/ic_baseline_visibility_off_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:longClickable="false"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+
+    <android.widget.Button
+        android:id="@+id/btnCreate"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/designbutton"
+        android:padding="20dp"
+        android:text="@string/Create"
+        android:textColor="@color/red"
+
+        android:textStyle="bold">
+
+    </android.widget.Button>
+
+
+
+</RelativeLayout>

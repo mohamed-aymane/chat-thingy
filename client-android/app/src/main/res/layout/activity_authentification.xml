@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentification"
+    >
+
+    <include layout="@layout/toolbarlogin"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/loginId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="@string/Login"
+        android:textColor="@color/red"
+        android:textSize="50sp"
+        android:textStyle="bold"
+
+        >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/textId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/loginId"
+        android:layout_alignBottom="@id/loginId"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="@string/id"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <Spinner
+        android:id="@+id/loginId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/loginPassword"
+        android:layout_alignEnd="@+id/loginPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="1dp"
+        android:layout_toEndOf="@id/textId"
+        android:background="@drawable/designinput"
+        android:entries="@array/type"
+        android:minHeight="48dp"
+        android:padding="10dp">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/loginPassword"
+        android:layout_alignBottom="@+id/loginPassword"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:text="@string/MP"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputEditText
+
+
+        android:id="@+id/loginPassword"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginId"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/textPassword"
+        android:autofillHints=""
+        android:background="@drawable/designinput"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawableRight="@drawable/ic_baseline_visibility_off_24"
+        android:ems="10"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:longClickable="false"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <android.widget.Button
+        android:id="@+id/btnLogin"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/designbutton"
+        android:padding="10dp"
+        android:text="@string/Login"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        tools:ignore="DuplicateSpeakableTextCheck">
+
+    </android.widget.Button>
+
+
+
+
+</RelativeLayout>
